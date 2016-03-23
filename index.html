@@ -104,11 +104,11 @@ Misc OSS contribs (Gradle plugins, deck2pdf, jlangdetect, ...)</span><span class
 }</code></pre></div></div>
 <div class="imageblock" style=""><div class="content"><img src="./images/GradleLogoReg.png" alt="GradleLogoReg" /></div></div></section>
 <section id="project-jigsaw"><h2>Project Jigsaw</h2><div class="ulist"><ul><li><p>Modularity for the Java platform</p><div class="ulist"><ul><li><p><strong>Reliable configuration</strong> (goodbye <em>classpath</em>)</p></li><li><p><strong>Strong encapsulation</strong> (goodbye <em>com.sun</em>)</p></li></ul></div></li><li><p>Enforce strict boundaries between modules</p><div class="ulist"><ul><li><p>compile-time</p></li><li><p>run-time</p></li></ul></div></li></ul></div></section>
-<section id="jigsaw-modules"><h2>Jigsaw modules</h2><div class="listingblock"><div class="title">Declaring a module</div><div class="content"><pre class="CodeRay"><code>module com.foo.bar {
+<section><section id="jigsaw-modules"><h2>Jigsaw modules</h2></section><section id="declaring-a-module"><h2>Declaring a module</h2><div class="listingblock"><div class="title">module-info.java</div><div class="content"><pre class="CodeRay"><code class="java language-java">module com.foo.bar {
     requires org.baz.qux;
     exports com.foo.bar.alpha;
     exports com.foo.bar.beta;
-}</code></pre></div></div></section>
+}</code></pre></div></div></section><section id="a-module"><h2>A module</h2><div class="ulist"><ul><li><p>Declares dependencies onto other modules</p><div class="ulist"><ul><li><p>optionally transitive (<code>public</code>)</p></li></ul></div></li><li><p>Declares a list of packages it exports</p></li><li><p>will be found on <em>modulepath</em></p></li></ul></div></section></section>
 <section id="why-it-s-going-to-break-your-apps"><h2>Why it&#8217;s going to break your apps</h2><div class="ulist"><ul><li><p>Exports are package based</p></li><li><p>A non-exported package is not visible to consumers</p></li><li><p>2 modules cannot export the same packages</p></li><li><p>2 modules cannot have the same internal packages</p></li></ul></div>
 <div class="paragraph"><p>Death to <strong>split packages</strong>.</p></div></section>
 <section id="how-gradle-will-help"><h2>How Gradle will help?</h2><div class="ulist"><ul><li><p>Find a <em>smooth migration path</em></p></li><li><p>Prepare today, migrate when ready</p></li></ul></div></section>
