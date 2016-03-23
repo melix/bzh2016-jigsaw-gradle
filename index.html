@@ -28,32 +28,32 @@ Misc OSS contribs (Gradle plugins, deck2pdf, jlangdetect, ...)'''
 <section id="gradle-s-software-model"><h2>Gradle&#8217;s software model</h2><div class="ulist"><ul><li><p>Idea : we&#8217;re building software, so let&#8217;s model software</p></li><li><p>Describe <em>what</em> rather than <em>how</em></p></li><li><p>Leverage conventions</p></li><li><p>Work in progress</p></li></ul></div></section>
 <section id="a-simple-project"><h2>A simple project</h2><div id="player-container"></div>
   <script>
-    asciinema_player.core.CreatePlayer('player-container', 'step1.json', { width: 114, height: 24 });
+    asciinema_player.core.CreatePlayer('player-container', 'step1.json', { width: 114, height: 24, fontSize: 'medium' });
   </script></section>
 <section id="internal-apis"><h2>Internal APIs</h2><div id="player-container2"></div>
   <script>
-    asciinema_player.core.CreatePlayer('player-container2', 'step2.json', { width: 114, height: 24 });
+    asciinema_player.core.CreatePlayer('player-container2', 'step2.json', { width: 114, height: 24, fontSize: 'medium' });
   </script></section>
 <section id="internal-apis-maintenance-nightmare"><h2>Internal APIs maintenance nightmare</h2><div id="player-container3"></div>
   <script>
-    asciinema_player.core.CreatePlayer('player-container3', 'step3.json', { width: 114, height: 24 });
+    asciinema_player.core.CreatePlayer('player-container3', 'step3.json', { width: 114, height: 24, fontSize: 'medium' });
   </script></section>
 <section id="declaring-internal-apis"><h2>Declaring internal APIs</h2><div id="player-container4"></div>
   <script>
-    asciinema_player.core.CreatePlayer('player-container4', 'step4.json', { width: 114, height: 24 });
+    asciinema_player.core.CreatePlayer('player-container4', 'step4.json', { width: 114, height: 24, fontSize: 'medium' });
   </script></section>
-<section id="compile-avoidance"><h2>Compile avoidance</h2><div id="player-container5"></div>
+<section><section id="compile-avoidance"><h2>Compile avoidance</h2><div id="player-container5"></div>
   <script>
-    asciinema_player.core.CreatePlayer('player-container5', 'step5.json', { width: 114, height: 24 });
-  </script></section>
+    asciinema_player.core.CreatePlayer('player-container5', 'step5.json', { width: 114, height: 24, fontSize: 'medium' });
+  </script></section><section id="compile-avoidance-benefits"><h2>Compile avoidance benefits</h2><div class="ulist"><ul><li><p>Doesn&#8217;t recompile dependents if:</p><div class="ulist"><ul><li><p>method body changes</p></li><li><p>parameter names change</p></li><li><p>method order changes</p></li><li><p>private method added/removed</p></li></ul></div></li><li><p>In short: if API stable, do nothing</p></li></ul></div></section></section>
 <section id="declaring-target-platforms"><h2>Declaring target platforms</h2><div id="player-container6"></div>
   <script>
-    asciinema_player.core.CreatePlayer('player-container6', 'step6.json', { width: 114, height: 24 });
+    asciinema_player.core.CreatePlayer('player-container6', 'step6.json', { width: 114, height: 24, fontSize: 'medium' });
   </script></section>
 <section id="why-does-gradle-help"><h2>Why does Gradle help?</h2><div class="ulist"><ul><li><p>Add <code>targetPlatform 'java9'</code></p></li><li><p>Generate module descriptor automatically?</p></li><li><p>Profit!</p></li></ul></div></section>
 <section id="trying-it-out"><h2>Trying it out</h2><div id="player-container7"></div>
   <script>
-    asciinema_player.core.CreatePlayer('player-container7', 'step7.json', { width: 114, height: 24 });
+    asciinema_player.core.CreatePlayer('player-container7', 'step7.json', { width: 114, height: 24, fontSize: 'medium' });
   </script></section>
 <section id="what-s-next"><h2>What&#8217;s next?</h2><div class="ulist"><ul><li><p>Automatic toolchain selection</p></li><li><p>Support for <code>jimage</code> and <code>jlink</code></p></li><li><p>Support for modulepath</p></li><li><p>Toolchain provisioning</p></li></ul></div></section>
 <section id="be-involved"><h2>Be involved</h2><div class="ulist"><ul><li><p>Specs can be found on <a href="https://github.com/gradle/gradle/blob/master/design-docs/jdk9-support.md">our GitHub repo</a></p></li></ul></div></section>
